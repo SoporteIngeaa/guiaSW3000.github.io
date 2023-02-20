@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/efdf417762.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Guia de Opeaciónes SW3000</title>
+  </head>
+  <body>
+    <div class="container title">
+      <h1>Guía para uso del sistema SW3000</h1>
+      <div class="text">
+        <p>
+          Te damos la bienvenida a esta guía para el uso del sistema SW3000. Se
+          ha desarrollado pensando en los pasos que debe cubrir el administrador
+          para el uso correcto del sistema.
+        </p>
+        <p>
+          Se ha puesto el enfoque en 4 secciones, resumiendo el proceso de operación del
+          sistema. Ayudando al administrador a conocer que información falta
+          para avanzar al siguiente paso.
+        </p>
+        <p>
+          Cabe mencionar que el Sistema SW3000 ya cuenta con un Manual de
+          Operación en donde se encuentra información más detallada de cada
+          proceso.<br />Pulsando la tecla F1 desde la pantalla donde te
+          encuentres en el sistema SW3000, se abrirá el manual mostrándote
+          información de esa pantalla. <br /><em>
+            algunas imágenes de ese manual no están actualizadas, pero la
+            información de operación sigue siendo vigente.</em
+          >
+        </p>
+      </div>
+      <br />
+      <!-- <br /> -->
+      <br />
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-home"
+            type="button"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+          >
+            1 - Definiciones
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+          >
+            2 - Empleados
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+          >
+            3- Terminales
+          </button>
+        </li>
+         </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+          >
+            4 - Reportes
+          </button>
+        </li>
+      </ul>
+
+      <div class="tab-content paso1" id="pills-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="pills-home"
+          role="tabpanel"
+          aria-labelledby="pills-home-tab"
+          tabindex="0"
+        >
+          <h2 class="h5 text-primary uno">
+            <!-- Preparar la información e importación al sistema SW3000 -->
+            Definiciones
+          </h2>
+          <p>
+            <!-- El sistema SW3000 permite la importación de la información de forma
+            manual y de forma masiva. -->
+            El sistema SW3000 nos ayuda a interpretar los registros de asistencia que se
+            reciben de las terminales biométricas. En Definiciones precisamos
+            los parámetros para que las interpretaciones recibidas sean de
+            acuerdo a lo que buscamos de cada empleado.
+          </p>
+          <p>
+            <!-- La recomendación es que la carga de Empleados, Jornadas y Horarios
+            se realice de forma masiva, por medio de Layouts. -->
+            Ingresamos en Definiciones en la pestaña principal:
+            <strong>DEFINICIONES -> BASE DE DATOS</strong>
+          </p>
+          <div class="row">
+            <div class="col-lg-12">
+              <img class="img-fluid"
+                <img
+                src="img/definiciones.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <br />
+          <p>
+           
+            Menú principal del área de Definiciones
+          </p>
+          <div class="row">
+            <div class="col-lg-12">
+              <img
+                class="img-fluid"
+                <img
+                src="img/menu-definiciones.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            
+          </div>
+           <br />
+           <details>
+             <summary class="h5 text-decoration-underline">
+              Descripción de cada función de Definiciones
+            </summary>
+          <div class="list-group">
+          <ul class="list-group">
+            <li class="list-group-item">Las <strong>Jornadas</strong> definen la Hora de Entrada, Tolerancia, Hora de Comida y Hora de Salida.</li>
+            <li class="list-group-item">Los <strong>Horarios</strong> agrupan las Jornadas para formar períodos de Tiempo que pueden ser por Semana, por Rol de Turnos repetitivo indefinidamente ó también pueden definirse Horarios Libres.</li>
+            <li class="list-group-item">Los <strong>Eventos</strong> (incidencias) se generan cuando se rebasan los límites impuestos en la Jornada y se asigna un Identificador ó Acrónimo para cada uno de ellos.</li>
+            <li class="list-group-item">Los <strong>Controles</strong> definen cuál ó cuáles Eventos serán monitoreados y consecuentemente reportados.</li>
+            <li class="list-group-item">Los <strong>Justificantes</strong> definen cuál ó cuáles Eventos serán Justificados y consecuentemente autorizados. </li>
+            <li class="list-group-item">Los <strong>Puestos</strong> definen el Puesto ó Categoría dentro de la Organización. </li>
+            <li class="list-group-item">Los <strong>Departamentos</strong> definen el Departamento, Centro de Costo etc. dentro de la Organización.</li>
+            <li class="list-group-item">Los Identificadores de <strong>Empresas</strong> definen la Empresa y Sub Grupo dentro de la Organización. </li>
+          </ul>
+          </div>
+         </details>
+        <br />
+          <hr />
+          <br />
+          <br />
+         <details>
+             <summary class="h5 text-decoration-underline">
+              1 - EMPRESAS- Como dar de alta la empresa y grupos en el sistema SW3000
+            </summary>
+            <p>En el área de Empresas podremos dar de alta las empresas y sub grupos.  </p>
+             <div class="row">
+            <div class="col-lg-8">
+              <img
+                class="img-fluid"
+                <img
+                src="img/empresas.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+             </div>
+            <br />
+    
+            <h3 class="h6">Identificador sub grupos</h3>
+             <div class="row">
+            <div class="col-lg-8">
+              <img
+                class="img-fluid"
+                <img
+                src="img/empresas-id.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+             </div>
+                     <p>El identificador del Sub Grupo está formado por 2 dígitos. El primero de la izquierda identifica a la Empresa (0 al 9 , A a la Z) y el segundo de la derecha identifica al Grupo (0 al 9, A a la Z) por ejemplo:</p>
+                     <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Identificador</th>
+      <th scope="col">Empresa</th>
+      <th scope="col">Grupo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">01</th>
+      <td>Importaciones Mexicanas, S.A.</td>
+      <td>Administrativos</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">02</th>
+      <td>Importaciones Mexicanas, S.A</td>
+      <td>Sindicalizados  </td>
+    
+    </tr>
+    <tr>
+      <th scope="row">10</th>
+      <td>Exportaciones S.A. DE C.V</td>
+      <td>Gerencial</td>
+
+    </tr>
+  </tbody>
+</table>
+<h3 class="h6">Logotipo</h3>
+             <div class="row">
+            <div class="col-lg-8">
+              <img
+                class="img-fluid"
+                <img
+                src="img/empresas-logo.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+             </div>
+             <p>Para capturar el Logotipo pulsamos Doble click  sobre el espacio del mismo con lo cuál se lanzará la aplicación que en su PC este designada para la captura de Imágenes (usualmente esta aplicación es PAINT). Una vez abierta la aplicación se puede pegar, modificar, borrar, agregar etc. el dibujo que se esta manejando en la aplicación y al cerrar y guardar, el logo automáticamente se verá en la Pantalla.</p>
+
+             <br />
+               
+            <h3 class="h6">Empresa nueva</h3>
+              <div class="row">
+            <div class="col-lg-8">
+              <img
+                class="img-fluid"
+                <img
+                src="img/btn-nueva.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+             </div>
+            <p>Al oprimir este botón podemos capturar en el primer dígito del Identificador de Sub grupo el que se va a utilizar para identificar a la nueva Empresa e inmediatamente se captura el número del Grupo y después de teclear "Enter" se pueden capturar todos los datos de la Empresa (Razón Social, Domicilio, RFC y Registro Patronal) así como la descripción del Grupo y la Jornada de Días Festivos.</p>
+             <div class="row">
+            <div class="col-lg-8">
+              <img
+                class="img-fluid"
+                <img
+                src="img/empresa-nueva.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+             </div>
+             <p><strong>Se oprime Actualiza para agregarla a la Base de Datos o Cancela para desecharla.</strong></p>
+                <br />
+              <h3 class="h6">Identificador Grupo</h3>
+               <div class="row">
+            <div class="col-lg-8">
+              <img
+                class="img-fluid"
+                <img
+                src="img/empresa-subgrupo.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+             </div>
+             <br />
+            <p>Se pueden dar de alta hasta 37 Grupos para cada Empresa y cada Grupo puede tener una Jornada de Día Festivos diferente.</p>
+              <br />
+              <h3 class="h6">Jornada Dia Festivo</h3>
+               <div class="row">
+            <div class="col-lg-8">
+              <img
+                class="img-fluid"
+                <img
+                src="img/empresa-festivo-sub.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+             </div>
+             <br />
+            <p>Número de la Jornada de Dia Festivo para el Grupo seleccionado. por omisión se toma 0098.</p>
+              <br />
+              <h3 class="h6">Grupo Nuevo</h3>
+               <div class="row">
+            <div class="col-lg-8">
+              <img
+                class="img-fluid"
+                <img
+                src="img/btn-nuevo.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+             </div>
+              <div class="row">
+            <div class="col-lg-8">
+              <img
+                class="img-fluid"
+                <img
+                src="img/empresa-id-subgrupo.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+             </div>
+             <br />
+              <br />
+              <h3 class="h6">Borra Grupo</h3>
+               <div class="row">
+            <div class="col-lg-8">
+              <img
+                class="img-fluid"
+                <img
+                src="img/btn-borra.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+             </div>
+               <div class="row">
+            <div class="col-lg-">
+              <img
+                class="img-fluid"
+                <img
+                src="img/modal-borra.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+             </div>
+             <br />
+             <p>Borra descarga el Grupo de la Empresa de la Base de Datos y si era el único Grupo entonces también borrará la Empresa.</p>
+             <br />
+              <h3 class="h6">Edita</h3>
+               <div class="row">
+            <div class="col-lg-8">
+              <img
+                class="img-fluid"
+                <img
+                src="img/btn-edita-empresa.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+             </div>
+             <p>Si la Empresa y grupo ya existían debemos pulsar este botón para poder modificar algún dato ó capturar el Logotipo.</p>
+              <br />
+              <h3 class="h6">Actualiza</h3>
+               <div class="row">
+            <div class="col-lg-8">
+              <img
+                class="img-fluid"
+                <img
+                src="img/btn-actualiza.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+             </div>
+             <p>Para grabar los datos en la Base de Datos será necesario pulsar este botón ó Cancela para no hacerlo. </p>
+            
+              <br />
+              <h3 class="h6">Cancela</h3>
+               <div class="row">
+            <div class="col-lg-8">
+              <img
+                class="img-fluid"
+                <img
+                src="img/btn-cancela.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+             </div>
+             <p>Desecha cualquier cambio o no agrega una Empreso o Grupo nuevo a la Base de Datos.</p>
+
+         </details>
+         <br />
+          <br />
+          <hr/>
+
+          <br />
+           <details>
+             <summary class="h5 text-decoration-underline">
+              2 - JORNADAS
+            </summary>
+            <br />
+             <p>
+           Las Jornadas definen la duración del Tiempo laborado es decir, definen la Hora de Entrada, Hora de Comida y la Hora de Salida.
+          </p>
+           <div class="row">
+            <div class="col-lg-12">
+              <img
+                class="img-fluid"
+                <img
+                src="img/jornadas.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            
+          </div>
+          <br />
+          <p>Cada Jornada se identifica con 4 dígitos que pueden ser los números 0 al 9 y las letras A a la Z en sus combinaciones lo cuál nos da una gama de más de 2 millones de Jornadas diferentes, se le asigna también una descripción de hasta 20 caracteres.</p>
+          <p>Podemos dar de alta una Jornada desde el botón Nueva y automáticamente se posiciona en el lugar apropiado dentro de la Cuadrícula. </p>
+          <p><strong> Recomendamos realizar la carga de jornadas por medio del Layout de jornadas</strong> </p>
+            <a
+            download="Layout-Jornadas-Muestra.xlsx"
+            href="./layouts/Layout-Jornadas-Muestra.xlsx"
+            >Descargar Layout de Jornadas Muestra</a
+          >
+          <br />
+          <br />
+           <details>
+            <summary class="h6 text-decoration-underline">
+              Que datos lleva cada columna del Layout de Jornadas
+            </summary>
+            <br />
+            <ul>
+              <li>
+                <strong>No. De Jornada</strong> - Definimos el numero
+                identificador (ID) de la jornada que pueden ser hasta 4 dígitos.
+                También nos permite incluir letras de la A a la Z.
+              </li>
+              <li>
+                <strong>Descripcion</strong> - Descripción de la jornada,
+                permite hasta 20 caracteres
+              </li>
+              <li>
+                <strong>Hora de Entrada</strong> - Definimos la hora de entrada,
+                el formato es HH:mm.
+              </li>
+              <li>
+                <strong>Tolerancia</strong> - Definimos el tiempo de tolerancia
+                que tiene el usuario, el formato es HH:mm.
+              </li>
+              <li>
+                <strong>Tiempo de Comida</strong> - Definimos el tiempo de
+                comida que tiene el usuario, esta columna es opcional y el
+                formato es HH: mm
+              </li>
+              <li>
+                <strong>Hora de Salida</strong> - Tipo numérico (8 dígitos
+                alfanuméricos)
+              </li>
+            </ul>
+          </details>
+          <br />
+          <details>
+            <summary class="h6 text-decoration-underline">
+              Como Importar el layout de Jornadas al Sistema SW3000
+            </summary>
+
+            <video
+              src="./video/jornadas.mp4"
+              width="640"
+              height="480"
+              controls
+            ></video>
+          </details>
+         </details>
+          
+         
+
+        
+         
+
+          <br />
+          <br />
+          <hr />
+          <br />
+          <details>
+            <summary class="h5 text-decoration-underline">
+             3 - HORARIOS
+            </summary>
+          <!-- <h5 class="h5">Layouts de Horarios</h5> -->
+
+          <p>
+            Los Horarios agrupan las Jornadas para formar períodos de Tiempo que
+            pueden ser por Semana, por Rol de Turnos repetitivo indefinidamente
+            y Horarios Libres es decir, tenemos 3 tipos de Horarios:
+          </p>
+           <div class="row">
+            <div class="col-lg-6">
+              <img
+                class="img-fluid"
+                <img
+                src="img/horarios.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            
+          </div>
+          <br />
+          <ul>
+            <li>
+              <strong>Sem (Semanal)</strong> para los Horarios que definen de
+              Lunes a Domingo las Jornadas para cada día de la Semana.
+            </li>
+            <li>
+              <strong>Sec (Secuencial) </strong> para los Horarios que definen
+              el Rol de las Jornadas por un período determinado que puede ser
+              desde uno hasta 84 días (12 semanas), período que se repetirá
+              indefinidamente.
+            </li>
+            <li>
+              <strong>Lib (Libre)</strong> para los Horarios que no tienen una
+              definición de Jornada ni tampoco un período de Tiempo definido.
+            </li>
+          </ul>
+          <p>
+            Si se tiene Personal que labora en el mismo Turno pero con diferente
+            día de Descanso será necesario capturar un Horario por cada día
+            diferente de Descanso ó si por ejemplo se tiene Personal que el
+            Sábado descansa pero otro grupo del mismo turno viene 1/2 día el
+            Sábado también será necesario un Horario para cada grupo.
+          </p>
+
+          <a
+            download="Layout-horarios-Muestra"
+            href="./layouts/Layout-horarios-Muestra.xlsx"
+            >Descargar Layout de Horarios Muestra</a
+          >
+          <br />
+          <br />
+          <details>
+            <summary class="h6 text-decoration-underline">
+              Que datos lleva cada columna del Layout de Horarios
+            </summary>
+            <br />
+            <p>
+              <strong
+                >Para definir el día de Descanso se puede usar la Jornada 99
+                (0099) o la letra "D"</strong
+              >
+            </p>
+            <ul>
+              <li>
+                <strong>No. de Horario</strong> - Número del Horario (de 1 a 8
+                Caracteres alfanuméricos).
+              </li>
+              <li><strong>Descripcion</strong> - Descripción del Horario</li>
+              <li>
+                <strong>Lunes</strong> - Definimos el número de la Jornada para
+                ese día
+              </li>
+              <li>
+                <strong>Martes</strong> - Definimos el número de la Jornada para
+                ese día
+              </li>
+              <li>
+                <strong>Miercoles</strong> - Definimos el número de la Jornada
+                para ese día
+              </li>
+              <li>
+                <strong>Jueves</strong> - Definimos el número de la Jornada para
+                ese día
+              </li>
+              <li>
+                <strong>Viernes</strong> - Definimos el número de la Jornada
+                para ese día
+              </li>
+              <li>
+                <strong>Sabado</strong> - Definimos el número de la Jornada para
+                ese día
+              </li>
+              <li>
+                <strong>Domingo</strong> - Definimos el número de la Jornada
+                para ese día
+              </li>
+            </ul>
+          </details>
+          <br />
+          <details>
+            <summary class="h6 text-decoration-underline">
+              Como Importar el layout de Jornadas al Sistema SW3000
+            </summary>
+            <br />
+
+            <video src="./video/jornadas.mp4" width="640" height="480" controls></video>
+          </details>
+           </details>
+
+          <br />
+          <br />
+          <hr />
+          
+          <br />
+          <details>
+            <summary class="h5 text-decoration-underline">
+             4 - EVENTOS
+            </summary>
+        
+            <br />
+          <p>
+            Cuando los límites marcados en la Jornada son rebasados y se tiene un Control para el monitoreo entonces se producen los Eventos.
+          </p>
+          <p>Los Eventos (también conocidos por Incidencias) son los resultados de la combinación de los Registros, la Jornada y el Control que cada uno de los miembros del Personal tenga en un día específico.</p>
+          <p>Puede ser por ejemplo que una Persona no tenga un solo Evento el Martes pero el Miércoles se presentan los Eventos de Retardo Grave, Salida después de la Hora con posible Tiempo Extra y que además no hizo los Registros con su Credencial porque la olvidó.</p>
+         
+           <div class="row">
+            <div class="col-lg-8">
+              <img
+                class="img-fluid"
+                <img
+                src="img/eventos.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            
+          </div>
+          <br />
+           <p>El Sistema SW3000 posee los algoritmos complejos para poder llevar la contabilidad de los siguientes Eventos:</p>
+          <ul>
+            <li><strong>Faltas (Sin Regs)</strong> <strong class="even">Ft</strong></li>
+            <li>
+              <strong>Hora de Entrada</strong> <strong class="even">He</strong><ul>
+                <li><strong class="even">Rt</strong> Retardo cuando se registra la Entrada dentro de la Tolerancia.</li>
+                <li><strong class="even">Rg</strong> Retardo Grave cuando la Entrada es después de la Tolerancia.</li>
+                <li><strong class="even">Ah</strong> Antes de Hora cuando la Entrada es antes del límite marcado.</li>
+              </ul>
+            </li>
+             <li>
+              <strong>Hora de Comida</strong> <strong class="even">Hc</strong><ul>
+                <li><strong class="even">Rd</strong> Reg después de Hora se presenta cuando se registra el regreso después del límite marcado sin importar los minutos que se tomaron para la Comida..</li>
+                <li><strong class="even">Te</strong> Tiempo excedido es cuando se toma más tiempo para comer que lo marcado.</li>
+                <li><strong class="even">Sc</strong> Sin reg. de comida se presenta cuando falta uno ó los dos registros de la Hora de comida.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Hora de Salida</strong> <strong class="even">Hs</strong><ul>
+                <li><strong class="even">Sa</strong> Salida antes se presenta cuando la Salida se registra antes del límite (Sal1) de la Jornada.</li>
+                <li><strong class="even">Sd</strong> Salida después se presenta cuando la Salida se registra después del límite (Sal2) de la Jornada.</li>
+                <li><strong class="even">Ss</strong> Sin reg. de salida se genera cuando falta el registro de salida.</li>
+              </ul>
+            </li>
+            <li><strong>Registros Extras</strong> <strong class="even">Rx</strong> Se presenta Registros Extras cuando se hacen uno ó más registros de los necesarios de acuerdo a la Jornada especificada.</li>
+            <li>
+              <strong>Jornada Iregular</strong> <strong class="even">Ji</strong><ul>
+                <li><strong class="even">Mi</strong> El tiempo laborado es menor al mínimo especificado en la Jornada</li>
+                <li><strong class="even">Mx</strong> El tiempo laborado es mayor al máximo especificado en la Jornada.</li>
+             
+              </ul>
+            </li>
+            <li>
+              <strong>Tiempo Extra</strong> <strong class="even">Tx</strong><ul>
+                <li><strong class="even">Dn</strong> El Tiempo Extra será en día Normal cuando se labore fuera de los límites marcados en la Jornada.</li>
+                <li><strong class="even">Df</strong> Será en día Festivo cuando se labore en día marcado como Festivo.</li>
+                 <li><strong class="even">Dd</strong> Será en día de Descanso cuando se labore en un día con Jornada # 0099.</li>
+             
+              </ul>
+            </li>
+          </ul>
+          <div class="row">
+            <div class="col-lg-6">
+              <img
+                class="img-fluid"
+                <img
+                src="img/eventos-2.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            
+          </div>
+          <br />
+          <p>Bajo este mismo concepto de Eventos tenemos la posibilidad de adecuar el manejo del Tiempo Extra de acuerdo a los siguientes criterios:</p>
+          <p class="h6">Registros Extras para Tiempo Extra</p>
+               <div class="row">
+            <div class="col-lg-6">
+              <img
+                class="img-fluid"
+                <img
+                src="img/eventos-3.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <p>Cuando el Tiempo Extra deba ser Registrado independientemente de los Registros de la Jornada entonces debemos verificar esta casilla</p>
+          <br />
+           <p class="h6">Tiempo Extra antes de la Hora de Entrada</p>
+               <div class="row">
+            <div class="col-lg-6">
+              <img
+                class="img-fluid"
+                <img
+                src="img/eventos-4.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <p>Cuando el Tiempo Extra no solo es después de la Hora de Salida sino también puede ser antes de la Hora de Entrada entonces debemos verificar esta casilla.</p>
+             <br />
+           <p class="h6">Tiempo Extra Automático</p>
+               <div class="row">
+            <div class="col-lg-6">
+              <img
+                class="img-fluid"
+                <img
+                src="img/eventos-5.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <p>Cuando el cálculo del Tiempo Extra se debe calcular sin Autorización entonces verificamos estas casillas ya sea en Día Normal, en Día Festivo ó en Día de Descanso.</p>
+              <br />
+           <p class="h6">Redondeo Tiempo Extra</p>
+               <div class="row">
+            <div class="col-lg-6">
+              <img
+                class="img-fluid"
+                <img
+                src="img/eventos-6.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <p>Si se redondea el Tiempo Extra entonces verificamos la primera casilla y respondemos a la siguiente pregunta con 15 si el redondeo es cada 1/4 de Hora , con 30 si es cada 1/2 Hora y con 60 si es cada Hora y los minutos transcurridos para el redondeo es decir, si se seleccionó 15 como redondeo se debe indicar el valor antes de los 15 minutos en donde se quitan ó se completan los 15 minutos (por ejemplo 10 minutos).</p>
+             <br />
+           <p class="h6">Ocultar Tiempo Extra no autorizado</p>
+               <div class="row">
+            <div class="col-lg-6">
+              <img
+                class="img-fluid"
+                <img
+                src="img/eventos-7.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <p>Cada vez que apliquemos un Justificante para Tiempo Extra se tiene la opción de poderlo limitar (no siempre todo Tiempo Extra está  Autorizado) y si lo autorizado es menor a lo registrado entonces el Tiempo Extra excedente (Real - Limitado) puede verse en una columna adicional en los Reportes sin embargo, si se verifica esta casilla dicha columna no se puede ver..</p>
+
+            <ul>
+            <li><strong>Registro Irregular</strong> <strong class="even">Ri</strong> Se genera Registro Incompleto cuando falte en el día algún Registro.</li>
+            <li>
+              <strong>Registro Irregular</strong> <strong class="even">Ir</strong><ul>
+                <li><strong class="even">Pc</strong> Tendremos un Registro Irregular cuando se realize mediante el Teclado de la PC</li>
+                <li><strong class="even">Tc</strong> mediante el Teclado de la Terminal</li>
+                <li><strong class="even">Bj</strong> cuando el Empleado este dado de Baja.</li>
+              </ul>
+            </li>     
+           
+          </ul>
+
+         
+          <br />
+          <br />
+     
+       
+           </details>
+
+          <br />
+          <br />
+          <hr />
+          <br />
+           <details>
+            <summary class="h5 text-decoration-underline">
+             5 - CONTROLES
+            </summary>
+          <!-- <h5 class="h5">Layouts de Horarios</h5> -->
+            <br />
+          <p>
+            Los Controles nos permiten monitorear y consecuentemente generar los Eventos asociados a los Registros que junto con la Jornada nos da el comportamiento de cada miembro del Personal.
+          </p>
+          <P>
+          Verificando cada casilla de las mostradas estaremos indicándole al Sistema que dicho Evento debe ser monitoreado es decir, si por ejemplo no deseamos que el Sistema nos muestre los Retardos de algún grupo de Personas en particular entonces definimos un Control con la casilla de Retardo sin verificar y asignamos este Control a ese grupo de Personas lo cuál nos da como resultado que nunca veremos Retardos para ellas.</P>
+           <div class="row">
+            <div class="col-lg-8">
+              <img
+                class="img-fluid"
+                <img
+                src="img/controles.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            
+          </div>
+          <br />
+          <p class="h6">Navegador</p>
+           <div class="row">
+            <div class="col-lg-8">
+              <img
+                class="img-fluid"
+                <img
+                src="img/controles-1.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            
+          </div>
+          <p>Nos permite movernos hacia atras, adelante, al primer ó último Control</p>
+           <h3 class="h6">Dar de alta un nuevo Control </h3>
+           <div class="row">
+            <div class="col-lg-8">
+              <img
+                class="img-fluid"
+                <img
+                src="img/controles-2.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            
+          </div>
+          <p>Para dar de alta un Control Nuevo bastará con escribir en el espacio del navegador el número deseado y a continuación pulsar la tecla 'Tab'. Si el Control es nuevo aparecen todas las casillas verificadas es decir todos los Eventos serán monitoreados.</p>
+           <div class="row">
+            <div class="col-lg-8">
+              <img
+                class="img-fluid"
+                <img
+                src="img/controles-3.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            
+          </div>
+          <br />
+           <h3 class="h6">Descripción</h3>
+           <div class="row">
+            <div class="col-lg-8">
+              <img
+                class="img-fluid"
+                <img
+                src="img/controles-descripcion.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>           
+          </div>
+          <p>Descripción del Control para hacer más fácil su Identificación.</p>
+           <br />
+           <h3 class="h6">Listado de Controles</h3>
+           <div class="row">
+            <div class="col-lg-8">
+              <img
+                class="img-fluid"
+                <img
+                src="img/controles-listado.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>           
+          </div>
+          <p>Tenemos una cuadrícula que nos muestra en resumen los controles que están activos en el Sistema.</p>
+           <br />
+           <h3 class="h6">Edita</h3>
+           <div class="row">
+            <div class="col-lg-8">
+              <img
+                class="img-fluid"
+                <img
+                src="img/control-btn-edita.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>           
+          </div>
+          <p>Para poder Editar algún Control existente.</p>
+           <br />
+           <h3 class="h6">Actualiza</h3>
+           <div class="row">
+            <div class="col-lg-8">
+              <img
+                class="img-fluid"
+                <img
+                src="img/control-btn-actualiza.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>           
+          </div>
+          <p>Una vez terminada la selección pulsamos Actualiza para grabar el Control en la Base de Datos ó Cancela para no hacerlo.</p>
+           <br />
+           <h3 class="h6">Cancela</h3>
+           <div class="row">
+            <div class="col-lg-8">
+              <img
+                class="img-fluid"
+                <img
+                src="img/control-btn-cancela.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>           
+          </div>
+          <p>Desecha las modificaciones a un Control existente ó no lo graba en la Base de Datos cuando es nuevo.</p>
+           <br />
+           <h3 class="h6">Boraa</h3>
+           <div class="row">
+            <div class="col-lg-8">
+              <img
+                class="img-fluid"
+                <img
+                src="img/control-btn-borra.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>           
+          </div>
+          <p>Borra el Control seleccionado de la Base de Datos.</p>
+         
+          
+          
+          
+           </details>
+         
+
+          <br />
+          <br />
+          <hr />
+          <!-- <h5 class="h5">Layouts de Empleados</h5>
+          <p>
+            Por medio del archivo Layout de empleados podemos cargar la
+            información de nuestros empleados al sistema.
+          </p>
+          <a
+            download="Layouts-Empleados-Muestra.xlsx"
+            href="./layouts/Layouts-Empleados-Muestra.xlsx"
+            >Descargar Layout de Empleados Muestra</a
+          >
+
+          <br />
+          <br />
+          <details>
+            <summary class="h5 text-decoration-underline">
+              Que datos lleva cada columna del Layout de Empleados
+            </summary>
+            <ul>
+              <li>
+                <strong>Num_Emp</strong> - Dato numérico, permite hasta 8
+                dígitos numéricos del 00000001 al 99999999
+              </li>
+              <li>
+                <strong>Num_crede</strong> - Dato numérico, permite hasta 8
+                dígitos numéricos del 00000001 al 99999999
+              </li>
+              <li>
+                <strong>Nombre</strong> - Nombre del usuario, permite hasta 20
+                caracteres
+              </li>
+              <li>
+                <strong>A_paterno</strong> - Apellido paterno (20 caracteres)
+              </li>
+              <li>
+                <strong>A_materno</strong> - Apellido materno (20 caracteres)
+              </li>
+              <li>
+                <strong>Pue</strong> - Tipo numérico (8 dígitos alfanuméricos)
+              </li>
+              <li>
+                <strong>Puesto</strong> - Descripción del Puesto (30 caracteres)
+              </li>
+              <li>
+                <strong>Dep</strong> - Tipo numérico (8 dígitos alfanuméricos)
+              </li>
+              <li>
+                <strong>Depto</strong> - Descripción del Departamento (30
+                caracteres)
+              </li>
+              <li>
+                <strong>Horario</strong> - número ID del horario que corresponde
+                al usuario
+              </li>
+              <li><strong>Con </strong> – numero ID del tipo de control</li>
+              <li><strong>Control </strong> – Descripción del control</li>
+              <li>
+                <strong>Sub </strong> – numero ID que corresponde al usuario
+              </li>
+              <li><strong>Subgrupo </strong> – Descripción del subgrupo</li>
+              <li>
+                <strong>Pue</strong> - Tipo numérico (8 dígitos alfanuméricos)
+              </li>
+              <li>
+                <strong>Puesto</strong> - Descripción del Puesto (30 caracteres)
+              </li>
+              <li>
+                <strong>Dep</strong> - Tipo numérico (8 dígitos alfanuméricos)
+              </li>
+              <li>
+                <strong>Depto</strong> - 8 dígitos numéricos del 00000001 al
+                99999999
+              </li>
+            </ul>
+          </details> -->
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-profile"
+          role="tabpanel"
+          aria-labelledby="pills-profile-tab"
+          tabindex="0"
+        >
+          <h2 class="h5">Información de los empleados</h2>
+        </div>
+        
+        <div
+          class="tab-pane fade"
+          id="pills-contact"
+          role="tabpanel"
+          aria-labelledby="pills-contact-tab"
+          tabindex="0"
+        >
+        <h2 class="h5"> Información de Terminales</h2>
+        </div>
+         <div
+          class="tab-pane fade"
+          id="pills-contact"
+          role="tabpanel"
+          aria-labelledby="pills-contact-tab"
+          tabindex="0"
+        >
+          <h2 class="h5">Información de Reportes</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

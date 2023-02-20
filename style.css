@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  /* text-align: center; */
+  margin-top: 2rem;
+  color: rgb(77, 77, 77);
+}
+
+p {
+  text-align: left;
+  color: rgb(56, 56, 56);
+}
+
+.paso1 {
+  background-color: rgb(241, 241, 241);
+  padding: 2rem;
+}
+
+.uno {
+  text-transform: uppercase;
+  /* margin-top: 2rem; */
+}
+
+.layout {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.row {
+  font-size: 14px;
+}
+.text {
+  margin-top: 2rem;
+}
+
+.even {
+  color: yellow;
+  background-color: #000080;
+  padding: 1px 5px;
+  font-size: 11px;
+}
